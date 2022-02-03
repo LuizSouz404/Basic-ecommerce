@@ -10,6 +10,10 @@ div.content {
   max-width: 1024px;
 }
 
+strong.sectionTitle {
+  font-size: 24px;
+}
+
 div.categorySection, div.trendingSection {
   display: flex;
   gap: .75rem
@@ -45,7 +49,7 @@ div.trendingSection {
 }
 
 div.trendingSectionContent {
-  aspect-ratio: 1/1;
+  aspect-ratio: 10/7;
   min-height: 225px;
   display: flex;
   align-items: flex-end;
@@ -55,10 +59,33 @@ div.trendingSectionContent {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 span.trendingSectionTitle {
-  font-weight: 800;
-  font-size: 45px;
+  font-weight: 500;
+  font-size: 32px;
   color: #fff;
+  height: 80px;
+}
+
+div.partnersContainer {
+  margin: 1rem 0;
+}
+
+div.partnersSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem 2rem;
+  padding: 1rem 0;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+div.partnersSectionContent {
+  aspect-ratio: 10/3;
+  min-height: 75px;
+  position: relative;
+  filter: grayscale(1);
 }
