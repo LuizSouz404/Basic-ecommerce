@@ -10,8 +10,13 @@ div.content {
   max-width: 1024px;
 }
 
-div.categorySection {
+div.categorySection, div.trendingSection {
   display: flex;
+  gap: .75rem
+}
+
+div.categoryContainer {
+  margin-bottom: 1.5rem;
 }
 
 div.categorySectionContent {
@@ -19,7 +24,7 @@ div.categorySectionContent {
   width: 175px;
   height: 100px;
   border-radius: 10px;
-  margin: .75rem .75rem .75rem 0;
+  margin: .75rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,5 +35,30 @@ div.categorySectionContent {
 }
 
 span.categorySectionTitle {
+  color: #fff;
+}
+
+div.trendingSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+div.trendingSectionContent {
+  aspect-ratio: 1/1;
+  min-height: 225px;
+  display: flex;
+  align-items: flex-end;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 1rem 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+span.trendingSectionTitle {
+  font-weight: 800;
+  font-size: 45px;
   color: #fff;
 }

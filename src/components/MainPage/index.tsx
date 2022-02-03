@@ -7,7 +7,7 @@ export function MainPage() {
       <div className={styles.content}>
 
         <div className={styles.categoryContainer}>
-          <strong className={styles.categoryTitle}>Categories</strong>
+          <strong className={styles.sectionTitle}>Categories</strong>
           <div className={styles.categorySection}>
             <Link href="/product/" passHref>
               <div style={{ backgroundImage: "url('/images/category/new.png')" }} className={styles.categorySectionContent}>
@@ -34,6 +34,27 @@ export function MainPage() {
               <div style={{ backgroundImage: "url('/images/category/pants.png')" }} className={styles.categorySectionContent}>
                 <span className={styles.categorySectionTitle}>
                   Pants
+                </span>
+              </div>
+            </Link>
+          </div>
+        </div>
+
+        <div className={styles.trendingContainer}>
+          <strong>Trending collections</strong>
+
+          <div className={styles.trendingSection}>
+            <Link href="/product/" passHref>
+              <div style={{ background: "linear-gradient(37.44deg, #000000 2.71%, rgba(0, 0, 0, 0) 50.1%), no-repeat center/cover url('/images/category/jacket.png') , #171717" }} className={styles.trendingSectionContent}>
+                <span className={styles.trendingSectionTitle}>
+                  New
+                </span>
+              </div>
+            </Link>
+            <Link href="/product/" passHref>
+              <div style={{ background: "linear-gradient(37.44deg, #000000 2.71%, rgba(0, 0, 0, 0) 50.1%), no-repeat center/cover url('/images/category/jacket.png') , #171717" }} className={styles.trendingSectionContent}>
+                <span className={styles.trendingSectionTitle}>
+                  New
                 </span>
               </div>
             </Link>
