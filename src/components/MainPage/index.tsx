@@ -7,6 +7,16 @@ export function MainPage() {
     <main className={styles.container}>
       <div className={styles.content}>
 
+        <div className={styles.communicationContainer}>
+          <div className={styles.communicationImage}>
+            <Image layout='fill' src="/images/rock.svg" alt=''></Image>
+          </div>
+
+          <h2>Hey do you like our work? So consider helping us keep making music</h2>
+
+          <span>Here you will find exclusive clothes from the albums, all made in a limited way so don{"'"}t waste time and buy yours</span>
+        </div>
+
         <div className={styles.categoryContainer}>
           <strong className={styles.sectionTitle}>Categories</strong>
           <div className={styles.categorySection}>

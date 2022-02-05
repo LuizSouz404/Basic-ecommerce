@@ -14,6 +14,24 @@ strong.sectionTitle {
   font-size: 24px;
 }
 
+div.communicationContainer {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 6rem;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+div.communicationImage {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+
 div.categorySection, div.trendingSection {
   display: flex;
   gap: .75rem

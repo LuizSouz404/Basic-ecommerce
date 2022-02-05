@@ -27,11 +27,8 @@ const Home: NextPage = () => {
       .then(json => setCategory(json))
   }, []);
 
-  console.log([product]);
-  console.log([category]);
-
   return (
-    <div>
+    <div className="mainContainer">
       <Header />
 
       <MainPage />
