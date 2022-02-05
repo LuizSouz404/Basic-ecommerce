@@ -1,0 +1,23 @@
+nav.breadcrumbContainer {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto 2rem;
+  padding-left: 1.5rem;
+}
+
+ol.breadcrumbContent {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: .25rem;
+  font-size: .75rem;
+  font-weight: 700;
+}
+
+li.breadcrumb {
+  color: #868686;
+}
+
+li.breadcrumbCurrent {
+  color: #171717;
+}
