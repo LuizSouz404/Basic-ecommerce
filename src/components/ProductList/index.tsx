@@ -1,9 +1,11 @@
 import Image from 'next/image';
+import Breadcrumbs from '../Breadcrumb';
 import styles from './styles.module.scss';
 
 export function ProductList() {
   return (
     <main className={styles.container}>
+      <Breadcrumbs/>
       <div className={styles.content}>
 
         <div className={styles.productContainer}>
