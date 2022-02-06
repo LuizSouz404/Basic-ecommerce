@@ -134,13 +134,18 @@ li.selectItem {
 
 div.colorContainer {
   width: 2.5rem;
-  height: 2.5rem;
+  height: 2.4rem;
   margin-right: .5rem;
   position: relative;
 }
 
+div.colorDescription {
+  display: flex;
+  align-items: center;
+}
+
 div.selectTitleColor {
-  max-width: 125px;
+  max-width: 150px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -156,7 +161,7 @@ ul.selectContentColor {
   list-style: none;
   position: absolute;
   top: calc(0px + 2.5rem);
-  width: 125px;
+  width: 150px;
   overflow: hidden;
   border: 1px solid #8e8e8e;
   border-top: none;
@@ -164,6 +169,10 @@ ul.selectContentColor {
   z-index: 1;
   animation: scale-up-top 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 
+}
+
+span.colorTitle {
+  text-transform: capitalize;
 }
 
 li.selectItemColor {

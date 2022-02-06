@@ -8,6 +8,15 @@ export function DetailsProduct() {
   const [isOpenSize, setIsOpenSize] = useState(false);
   const [isOpenColor, setIsOpenColor] = useState(false);
 
+  const [colorValue, setColorValue] = useState('white');
+  const [colorSize, setColorSize] = useState('');
+
+  function toggleColor(color: string) {
+    setColorValue(color);
+
+    setIsOpenColor(!isOpenColor);
+  }
+
   return (
     <main className={styles.container}>
 
@@ -51,26 +60,28 @@ export function DetailsProduct() {
             <p className={styles.description}>Color</p>
             <div className={styles.selectContainer}>
               <div onClick={() => setIsOpenColor(!isOpenColor)} className={styles.selectTitleColor}>
-                <div style={{background: "blue"}} className={styles.colorContainer}></div>
-                <span>Blue</span>
+                <div className={styles.colorDescription}>
+                  <div style={{background: colorValue}} className={styles.colorContainer}></div>
+                  <span className={styles.colorTitle}>{colorValue}</span>
+                </div>
                 <BsChevronRight className={styles.iconTransform} style={!!isOpenColor ? {transform: 'rotate(90deg)'} : {}} />
               </div>
 
               {!!isOpenColor && (
                 <ul className={styles.selectContentColor}>
-                  <li className={styles.selectItemColor}>
+                  <li onClick={() => toggleColor("Blue")} className={styles.selectItemColor}>
                     <div style={{background: "blue"}} className={styles.colorContainer}></div>
                     Blue
                   </li>
-                  <li className={styles.selectItemColor}>
+                  <li onClick={() => toggleColor("Red")} className={styles.selectItemColor}>
                     <div style={{background: "red"}} className={styles.colorContainer}></div>
                     Red
                   </li>
-                  <li className={styles.selectItemColor}>
+                  <li onClick={() => toggleColor("Purple")} className={styles.selectItemColor}>
                     <div style={{background: "purple"}} className={styles.colorContainer}></div>
                     Purple
                   </li>
-                  <li className={styles.selectItemColor}>
+                  <li onClick={() => toggleColor("Yellow")} className={styles.selectItemColor}>
                     <div style={{background: "yellow"}} className={styles.colorContainer}></div>
                     Yellow
                   </li>
