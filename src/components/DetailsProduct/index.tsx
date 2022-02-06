@@ -9,12 +9,18 @@ export function DetailsProduct() {
   const [isOpenColor, setIsOpenColor] = useState(false);
 
   const [colorValue, setColorValue] = useState('white');
-  const [colorSize, setColorSize] = useState('');
+  const [sizeValue, setSizeValue] = useState('M');
 
   function toggleColor(color: string) {
     setColorValue(color);
 
     setIsOpenColor(!isOpenColor);
+  }
+
+  function toggleSize(size: string) {
+    setSizeValue(size);
+
+    setIsOpenSize(!isOpenSize);
   }
 
   return (
@@ -41,16 +47,16 @@ export function DetailsProduct() {
             <p className={styles.description}>Size</p>
             <div className={styles.selectContainer}>
               <div onClick={() => setIsOpenSize(!isOpenSize)} className={styles.selectTitle}>
-                <span>P</span>
+                <span>{sizeValue}</span>
                 <BsChevronRight className={styles.iconTransform} style={!!isOpenSize ? {transform: 'rotate(90deg)'} : {}} />
               </div>
 
               {!!isOpenSize && (
                 <ul className={styles.selectContent}>
-                  <li className={styles.selectItem}>P</li>
-                  <li className={styles.selectItem}>M</li>
-                  <li className={styles.selectItem}>G</li>
-                  <li className={styles.selectItem}>GG</li>
+                  <li onClick={() => toggleSize("P")}  className={styles.selectItem}>P</li>
+                  <li onClick={() => toggleSize("M")}  className={styles.selectItem}>M</li>
+                  <li onClick={() => toggleSize("G")}  className={styles.selectItem}>G</li>
+                  <li onClick={() => toggleSize("GG")}  className={styles.selectItem}>GG</li>
                 </ul>
               )}
             </div>
