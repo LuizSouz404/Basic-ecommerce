@@ -45,21 +45,24 @@ const Breadcrumbs = () => {
           <Link href="/">HOME</Link>
         </li>
         {breadcrumbs.map((breadcrumb, i) => {
-          if (i === breadcrumbs.length) {
+          if (i === breadcrumbs.length-1) {
             return (
-              <li className={styles.breadcrumb} key={breadcrumb.href}>
-                <Link href={breadcrumb.href}>
-                  <a>
-                    {convertBreadcrumb(breadcrumb.breadcrumb)}
-                  </a>
-                </Link>
-              </li>
+              <>
+                <span>/</span>
+                <li className={styles.breadcrumbCurrent} key={breadcrumb.href}>
+                  <Link href={breadcrumb.href}>
+                    <a>
+                      {convertBreadcrumb(breadcrumb.breadcrumb)}
+                    </a>
+                  </Link>
+                </li>
+              </>
             )
           }
           return (
             <>
               <span>/</span>
-              <li className={styles.breadcrumbCurrent} key={breadcrumb.href}>
+              <li className={styles.breadcrumb} key={breadcrumb.href}>
                 <Link href={breadcrumb.href}>
                   <a>
                     {convertBreadcrumb(breadcrumb.breadcrumb)}
