@@ -1,0 +1,16 @@
+main.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 3rem 0;
+}
+
+div.content {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 1.75rem 1rem;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
