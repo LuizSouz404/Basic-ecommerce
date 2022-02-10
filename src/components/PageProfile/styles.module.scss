@@ -7,10 +7,70 @@ main.container {
 }
 
 div.content {
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 1.75rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
   width: 100%;
   max-width: 1024px;
   margin: 0 auto;
+}
+
+li.navBtn {
+  color: #666;
+  cursor: pointer;
+}
+
+li.navActive {
+  cursor: pointer;
+  font-weight: 700;
+  color: #171717;
+
+  &:hover {
+    color: #000;
+  }
+}
+
+div.ProfileContainer {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+div.profileSectionContent {
+  background: #f7f6f6;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2);
+  padding: 3rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+span.ProfileSubtitleSection {
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+section.ProfileSection {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+div.profileSectionData {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  text-align: start;
+}
+
+ul.ProfileNav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  list-style: none;
 }

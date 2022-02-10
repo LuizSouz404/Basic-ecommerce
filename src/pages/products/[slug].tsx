@@ -1,4 +1,4 @@
-import { DetailsProduct } from "../../components/DetailsProduct";
+import { DetailsProduct } from "../../components/PageDetailsProduct";
 import { Header } from "../../components/Header";
 
 export default function DetailsProductPage() {

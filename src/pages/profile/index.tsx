@@ -1,12 +1,12 @@
 import { Header } from "../../components/Header";
-import { ProductList } from "../../components/PageProductList";
+import { PageProfile } from "../../components/PageProfile";
 
-export default function Products() {
+export default function Profile() {
   return (
     <div className="mainContainer">
       <Header />
 
-      <ProductList />
+      <PageProfile />
     </div>
   )
 }

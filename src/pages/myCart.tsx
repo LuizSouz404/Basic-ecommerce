@@ -1,5 +1,5 @@
 import { Header } from "../components/Header"
-import { MyCartPage } from "../components/MyCartPage"
+import { MyCartPage } from "../components/PageMyCart"
 
 export default function myCart() {
   return (
