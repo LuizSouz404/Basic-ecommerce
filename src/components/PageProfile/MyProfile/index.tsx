@@ -1,6 +1,7 @@
+import Link from 'next/link'
 import styles from './styles.module.scss';
 
-export function PageProfile() {
+export function MyProfile() {
   return (
     <main className={styles.container}>
       <div className={styles.content}>
@@ -9,10 +10,18 @@ export function PageProfile() {
         <div className={styles.ProfileContainer}>
           <aside>
             <ul className={styles.ProfileNav}>
-              <li className={styles.navActive}>My profile</li>
-              <li className={styles.navBtn}>My address book</li>
-              <li className={styles.navBtn}>My orders</li>
-              <li className={styles.navBtn}>My wishlist</li>
+              <Link href="/profile" passHref>
+                <li className={styles.navActive}>My profile</li>
+              </Link>
+              <Link href="/profile/myAddressBook" passHref>
+                <li className={styles.navBtn}>My address book</li>
+              </Link>
+              <Link href="/profile/myOrders" passHref>
+                <li className={styles.navBtn}>My orders</li>
+              </Link>
+              <Link href="/profile/myWishlist" passHref>
+                <li className={styles.navBtn}>My wishlist</li>
+              </Link>
             </ul>
           </aside>
           <div className={styles.profileSectionContent}>

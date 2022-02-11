@@ -17,14 +17,20 @@ div.content {
 }
 
 li.navBtn {
-  color: #666;
+  color: #8e8d8d;
   cursor: pointer;
+  transition: .2s color;
+
+  &:hover {
+    color: #333333;
+  }
 }
 
 li.navActive {
   cursor: pointer;
   font-weight: 700;
   color: #171717;
+  transition: .2s color;
 
   &:hover {
     color: #000;
@@ -32,6 +38,7 @@ li.navActive {
 }
 
 div.ProfileContainer {
+  width: 95%;
   display: grid;
   grid-template-columns: 1fr 3fr;
 }

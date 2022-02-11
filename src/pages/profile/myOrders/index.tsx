@@ -1,11 +1,12 @@
 import { Header } from "../../../components/Header";
+import { MyOrders } from "../../../components/PageProfile/MyOrders";
 
-export default function MyOrders() {
+export default function MyOrdersPage() {
   return (
     <div className="mainContainer">
       <Header />
 
-      <h1>My Orders Page</h1>
+      <MyOrders />
     </div>
   )
 }

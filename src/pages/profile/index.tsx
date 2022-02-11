@@ -1,12 +1,12 @@
 import { Header } from "../../components/Header";
-import { PageProfile } from "../../components/PageProfile";
+import { MyProfile } from "../../components/PageProfile/MyProfile";
 
-export default function Profile() {
+export default function MyProfilePage() {
   return (
     <div className="mainContainer">
       <Header />
 
-      <PageProfile />
+      <MyProfile />
     </div>
   )
 }
