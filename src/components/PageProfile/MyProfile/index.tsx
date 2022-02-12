@@ -13,7 +13,7 @@ export function MyProfile() {
               <Link href="/profile" passHref>
                 <li className={styles.navActive}>My profile</li>
               </Link>
-              <Link href="/profile/myAddressBook" passHref>
+              <Link href="/profile/myAddress" passHref>
                 <li className={styles.navBtn}>My address book</li>
               </Link>
               <Link href="/profile/myOrders" passHref>
