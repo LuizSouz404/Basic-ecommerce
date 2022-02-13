@@ -63,15 +63,30 @@ span.ProfileSubtitleSection {
 
 section.ProfileSection {
   width: 100%;
-  display: flex;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem 1rem;
   flex-direction: column;
 }
 
-div.profileSectionData {
+div.wishlistImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 1rem;
+  background: #d5d5d5;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 1px 1px 7px #00000025;
+}
+
+div.profileSectionData,
+div.newWishlistContainer  {
   display: flex;
-  width: 100%;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: .75rem;
+  cursor: pointer;
 }
 
 ul.ProfileNav {
@@ -79,4 +94,13 @@ ul.ProfileNav {
   flex-direction: column;
   gap: 1.5rem;
   list-style: none;
+}
+div.newWishlistImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px dashed #333333;
+  width: 100px;
+  height: 100px;
+  border-radius: 1rem;
 }

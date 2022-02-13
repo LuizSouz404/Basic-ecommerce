@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { BsBagPlus } from 'react-icons/bs';
 import styles from './styles.module.scss';
 
 export function MyWishlist() {
@@ -25,24 +26,35 @@ export function MyWishlist() {
             </ul>
           </aside>
           <div className={styles.profileSectionContent}>
-          <span className={styles.ProfileSubtitleSection}>Minhas compras</span>
+          <span className={styles.ProfileSubtitleSection}>Minha lista de desejos</span>
 
             <section className={styles.ProfileSection}>
-              <div className={styles.profileSectionData}>
-                <strong>ID</strong>
-                <strong>Status</strong>
+              <div className={styles.newWishlistContainer}>
+                <div className={styles.newWishlistImg}>
+                  <BsBagPlus size={42} />
+                </div>
+                <strong>New wishlist</strong>
+                <span></span>
               </div>
               <div className={styles.profileSectionData}>
-                <span>99142457</span>
-                <span>Envio pendente</span>
+                <div className={styles.wishlistImg} style={{backgroundImage: "url(/images/products/jacketJeans.png)"}}></div>
+                <strong>Camisa</strong>
+                <span>2 Itens</span>
               </div>
               <div className={styles.profileSectionData}>
-                <span>99142458</span>
-                <span>A caminho</span>
+                <div className={styles.wishlistImg} style={{backgroundImage: "url(/images/products/jacketLarge.png)"}}></div>
+                <strong>Casaco</strong>
+                <span>12 Itens</span>
               </div>
               <div className={styles.profileSectionData}>
-                <span>99142459</span>
-                <span>Entregue</span>
+                <div className={styles.wishlistImg} style={{backgroundImage: "url(/images/products/sweater.png)"}}></div>
+                <strong>Calça</strong>
+                <span>10 Itens</span>
+              </div>
+              <div className={styles.profileSectionData}>
+                <div className={styles.wishlistImg} style={{backgroundImage: "url(/images/products/sweaterPatern.jpg)"}}></div>
+                <strong>Accessorios</strong>
+                <span>17 Itens</span>
               </div>
             </section>
           </div>
